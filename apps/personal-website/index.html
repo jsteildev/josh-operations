@@ -1,0 +1,223 @@
+<!--
+  ============================================================
+  JOSH STEIL, PERSONAL BRAND SITE (single page)
+  ============================================================
+  STATUS: DRAFT. All copy below is first-person draft copy for
+  Josh to review and edit before publishing.
+
+  PLACEHOLDERS JOSH NEEDS TO REPLACE (search for "TO-REPLACE"):
+    1. Portrait photo            (Hero section, "Your portrait here")
+    2. Eight photo tiles         (Life section, labeled per tile)
+    3. Contact email             (hello@example.com in Contact)
+    4. Social links              (Instagram, LinkedIn, X, currently "#")
+    5. Company website link      (Business section, currently "#")
+    6. Writing cards             (3 essays, marked DRAFT, links "#")
+
+  PHOTO NOTES:
+    - Breathwork/meditation tile: Josh wants Japan photos here.
+    - Health & fitness tile: he has lots of fitness content on his phone;
+      ask him to send the shots he wants used.
+
+  TO VERIFY BEFORE PUBLISH:
+    - The "$100k+ in settlements in 2026" stat (marked DRAFT in Business)
+
+  HOW TO SWAP A PHOTO: drop the real image into /images/, then replace
+  the <div class="photo-ph"> block with:
+      <img class="photo-real" src="images/your-photo.jpg" alt="Describe the photo">
+  The .photo-real class keeps the same rounded sizing.
+
+  NOTE: no em dashes are used anywhere in this site's copy, per request.
+  ============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josh Steil | Engineer, Business Owner, Brother, Friend</title>
+  <meta name="description" content="Personal site of Josh Steil: co-founder of The Credit Brothers, living in Austin, Texas. Family, friends, travel, and personal writings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9728;</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top">Josh Steil</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">My story</a></li>
+        <li><a href="#business">The business</a></li>
+        <li><a href="#life">Life</a></li>
+        <li><a href="#writings">Writings</a></li>
+        <li><a href="#contact" class="nav-cta">Say hello</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Welcome, glad you found your way here</p>
+          <h1>Josh Steil</h1>
+          <p class="tagline">Engineer turned business owner, brother, son, friend. Building a life and a company in Austin, Texas.</p>
+          <p class="hero-intro">I'm Josh. I spend my days building The Credit Brothers with my brother, and my evenings chasing good food, good travel, and time with the people I love most.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about">Read my story</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <!-- TO-REPLACE: portrait photo of Josh -->
+          <div class="photo-ph portrait" role="img" aria-label="Placeholder for a portrait photo of Josh">
+            <span>Your portrait here</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / MY STORY ============ -->
+    <section class="section" id="about">
+      <div class="container narrow reveal">
+        <p class="eyebrow">My story</p>
+        <h2>A little about me</h2>
+        <div class="prose">
+          <p>I grew up in a divorced family, which shaped how I see the world in ways I'm still putting into words. I studied electrical engineering at UConn, then went to work at Lockheed Martin in their missile defense division. Engineering taught me how to take complex systems apart and rebuild them better, and that way of thinking followed me out of the lab and into business.</p>
+          <p>Today I live in Austin, Texas, where I co-founded The Credit Brothers with my brother Chris. We help people repair their credit through a system grounded in consumer law, and I'm proud of the work we do for our clients every single day.</p>
+          <p>Outside of work, I'm a points and travel enthusiast. There's nothing I love more than a well planned trip, a great meal in a new city, and coming home to the people who matter most. My family is everything to me: my parents, and my brother Chris, my partner in business and in life.</p>
+          <p>I try to take care of myself the same way I take care of the people around me. Training, good sleep, breathwork and meditation keep me grounded. Fitness is a daily practice for me, not a phase, and the quieter practices matter just as much as the loud ones.</p>
+          <p class="draft-note">Draft copy, written for Josh to edit in his own voice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUSINESS ============ -->
+    <section class="section section-alt" id="business">
+      <div class="container reveal">
+        <p class="eyebrow">The business</p>
+        <h2>The Credit Brothers</h2>
+        <div class="business-grid">
+          <div class="prose">
+            <p>My brother Chris and I run The Credit Brothers, a consumer law focused credit repair company. We built a dispute system rooted in consumer protection law, and this year it has helped pay our clients over $100k in settlements.</p>
+            <p>Now we're packaging that system so other businesses can offer credit repair inside their own suite of services, without needing to hire a full staff to run it.</p>
+            <p class="draft-note">Draft copy. Stat to verify before publishing.</p>
+            <!-- TO-REPLACE: link to the company website -->
+            <a class="btn btn-primary" href="#" aria-label="Visit The Credit Brothers website (link to be added)">Visit the company site</a>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number">$100k+</p>
+            <p class="stat-label">in settlements paid to our clients in 2026</p>
+            <p class="draft-note small">Draft stat, to verify.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LIFE ============ -->
+    <section class="section" id="life">
+      <div class="container reveal">
+        <p class="eyebrow">Life</p>
+        <h2>The good stuff</h2>
+        <p class="section-lede">How I spend my time when I'm not building the business. Real photos coming soon.</p>
+        <div class="photo-grid">
+          <!-- TO-REPLACE: real photos, one per tile -->
+          <figure class="photo-tile">
+            <div class="photo-ph" role="img" aria-label="Placeholder for a family photo"><span>Family</span></div>
+            <figcaption>My parents, the reason for all of it</figcaption>
+          </figure>
+          <figure class="photo-tile">
+            <div class="photo-ph" role="img" aria-label="Placeholder for a photo with his brother Chris"><span>Chris</span></div>
+            <figcaption>My brother, my business partner, my best friend</figcaption>
+          </figure>
+          <figure class="photo-tile">
+            <div class="photo-ph" role="img" aria-label="Placeholder for a photo with friends"><span>Friends</span></div>
+            <figcaption>The inner circle, Austin and beyond</figcaption>
+          </figure>
+          <figure class="photo-tile">
+            <div class="photo-ph" role="img" aria-label="Placeholder for a photo of Austin life"><span>Austin</span></div>
+            <figcaption>Home base, living in Austin, Texas</figcaption>
+          </figure>
+          <figure class="photo-tile">
+            <div class="photo-ph" role="img" aria-label="Placeholder for a fitness photo"><span>Health &amp; fitness</span></div>
+            <figcaption>Training is a daily practice, not a phase</figcaption>
+          </figure>
+          <figure class="photo-tile">
+            <div class="photo-ph" role="img" aria-label="Placeholder for a photo from an NFL game"><span>Game days</span></div>
+            <figcaption>NFL Sundays, live and loud</figcaption>
+          </figure>
+          <figure class="photo-tile">
+            <div class="photo-ph" role="img" aria-label="Placeholder for a photo from a concert"><span>Concerts</span></div>
+            <figcaption>Chasing live music wherever it plays</figcaption>
+          </figure>
+          <figure class="photo-tile">
+            <div class="photo-ph" role="img" aria-label="Placeholder for a Japan photo, breathwork and meditation"><span>Breathwork</span></div>
+            <figcaption>Breathwork and meditation, lessons from Japan</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WRITINGS ============ -->
+    <section class="section section-alt" id="writings">
+      <div class="container reveal">
+        <p class="eyebrow">Writings</p>
+        <h2>Notes and essays</h2>
+        <p class="section-lede">Personal pieces I'm working on. Drafts for now, published soon.</p>
+        <div class="card-grid">
+          <article class="card">
+            <p class="card-kicker">Essay &middot; Draft</p>
+            <h3>On starting over</h3>
+            <p>What I've learned about beginning again, in business and in life, and why the blank page is a gift.</p>
+            <a class="card-link" href="#" aria-label="Read On starting over (coming soon)">Read soon &rarr;</a>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Essay &middot; Draft</p>
+            <h3>What my family taught me about business</h3>
+            <p>Lessons from the dinner table that turned out to be lessons for the boardroom too.</p>
+            <a class="card-link" href="#" aria-label="Read What my family taught me about business (coming soon)">Read soon &rarr;</a>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Essay &middot; Draft</p>
+            <h3>Notes on slowing down</h3>
+            <p>On breathwork, quiet mornings, and learning that rest is part of the work.</p>
+            <a class="card-link" href="#" aria-label="Read Notes on slowing down (coming soon)">Read soon &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container narrow reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Say hello</h2>
+        <p class="section-lede">The best way to reach me is email. I read everything.</p>
+        <!-- TO-REPLACE: Josh's real contact email -->
+        <a class="email-link" href="mailto:hello@example.com">hello@example.com</a>
+        <ul class="social-links">
+          <!-- TO-REPLACE: real profile URLs -->
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">X</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Josh Steil. Made with care in Austin, Texas.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
